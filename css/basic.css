@@ -169,7 +169,6 @@ body:after {
     flex: 1;
 }
 .center-child{
-    border: 1px solid #2d2d2d;
     display: flex;
     justify-content: center;
 }

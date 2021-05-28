@@ -297,7 +297,7 @@ var JoyStick = (function(container, parameters)
 	 */
 	this.GetX = function ()
 	{
-		return (100*((movedX - centerX)/maxMoveStick)).toFixed();
+		return (255*((movedX - centerX)/maxMoveStick)).toFixed();
 	};
 
 	/**
@@ -306,7 +306,7 @@ var JoyStick = (function(container, parameters)
 	 */
 	this.GetY = function ()
 	{
-		return ((100*((movedY - centerY)/maxMoveStick))*-1).toFixed();
+		return ((255*((movedY - centerY)/maxMoveStick))*-1).toFixed();
 	};
 	
 	/**
@@ -336,11 +336,11 @@ var JoyStick = (function(container, parameters)
 		{
 			if(result === "C")
 			{ 
-				result = "W";
+				result = "O";
 			}
 			else
 			{
-				result += "W";
+				result += "O";
 			}
 		}
 		if(orizontal > directionHorizontalLimitPos)
